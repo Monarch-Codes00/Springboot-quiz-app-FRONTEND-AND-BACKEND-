@@ -2,7 +2,7 @@ spring:
   datasource:
     url: jdbc:postgresql://localhost:5432/task_management_system
     username: postgres
-    password: michael
+    password: christopher
     driver-class-name: org.postgresql.Driver
 
   jpa:
@@ -18,7 +18,7 @@ spring:
     locations: classpath:db/migration
 
 server:
-  port: 8080
+  port: 8081
 
 logging:
   level:
