@@ -9,10 +9,10 @@
         <relativePath/>
     </parent>
     <groupId>com.aptechph</groupId>
-    <artifactId>task_management_system</artifactId>
+    <artifactId>quiz_system</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>task_management_system</name>
-    <description>Developing an automated task management system</description>
+    <name>quiz_system</name>
+    <description>Quiz taking application backend</description>
     <url/>
     <licenses>
         <license/>
@@ -28,7 +28,6 @@
     </scm>
     <properties>
         <java.version>17</java.version>
-        <lombok.version>1.18.26</lombok.version>
     </properties>
     <dependencies>
         <dependency>
@@ -52,21 +51,16 @@
             <artifactId>flyway-database-postgresql</artifactId>
             <version>10.0.0</version>
         </dependency>
-
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-devtools</artifactId>
-            <scope>runtime</scope>
-            <optional>true</optional>
-        </dependency>
         <dependency>
             <groupId>org.postgresql</groupId>
             <artifactId>postgresql</artifactId>
             <scope>runtime</scope>
         </dependency>
+
         <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-devtools</artifactId>
+            <scope>runtime</scope>
             <optional>true</optional>
         </dependency>
         <dependency>
@@ -80,18 +74,6 @@
             <version>2.8.13</version>
         </dependency>
 
-        <dependency>
-            <groupId>org.mapstruct</groupId>
-            <artifactId>mapstruct</artifactId>
-            <version>1.6.3</version>
-        </dependency>
-        <dependency>
-            <groupId>org.mapstruct</groupId>
-            <artifactId>mapstruct-processor</artifactId>
-            <version>1.6.3</version>
-            <scope>provided</scope>
-        </dependency>
-
     </dependencies>
 
     <build>
@@ -100,18 +82,8 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <configuration>
-                    <annotationProcessorPaths>
-                        <path>
-                            <groupId>org.projectlombok</groupId>
-                            <artifactId>lombok</artifactId>
-                            <version>${lombok.version}</version>
-                        </path>
-                        <path>
-                            <groupId>org.mapstruct</groupId>
-                            <artifactId>mapstruct-processor</artifactId>
-                            <version>1.6.3</version>
-                        </path>
-                    </annotationProcessorPaths>
+                    <source>17</source>
+                    <target>17</target>
                 </configuration>
             </plugin>
             <plugin>
