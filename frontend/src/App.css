@@ -1,0 +1,33 @@
+.App {
+  text-align: center;
+}
+
+.App header {
+  background-color: #282c34;
+  padding: 20px;
+  color: white;
+}
+
+.App header h1 {
+  margin: 0 0 10px 0;
+}
+
+.navigation {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.navigation a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #61dafb;
+  font-weight: bold;
+}
+
+.navigation a:hover {
+  text-decoration: underline;
+}
+
+main {
+  padding: 20px;
+}
